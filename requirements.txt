@@ -1,0 +1,11 @@
+# Word ⇄ PDF 互转工具 —— 运行依赖
+#
+# 这些依赖由「安装依赖.bat」自动装入程序自带的 env 目录，
+# 一般不需要手动执行。如需手动安装：
+#
+#     env\Scripts\python.exe -m pip install -r requirements.txt
+
+python-docx>=1.1.0        # 生成 Word 文档（PDF → Word）
+PyMuPDF>=1.24.0           # 解析 PDF 版面、提取文字/表格/图片
+pywin32>=306              # 调用 Microsoft Word COM 接口（Word → PDF）
+tkinterdnd2>=0.4.0        # 图形界面的拖拽支持
